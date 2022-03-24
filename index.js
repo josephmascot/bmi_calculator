@@ -15,7 +15,7 @@ app.get('/', function(request, response) {
     response.render('bmi_calculator');
 });
 
-app.post('/bmi_calculator', urlEncodedParser, function(request, response) {
+app.post('/calculate-bmi', urlEncodedParser, function(request, response) {
     height = parseFloat(request.body.height);
     weight = parseFloat(request.body.weight);
     rname = request.body.rname;

@@ -28,34 +28,44 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+form{
+  margin-left: 25%;
+  margin-right: 25%;
+}
 
 div {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
+body{
+   background-color: #f2f2f2;
+}
+legend{
+  text-align: center;
+}
 </style>
 <link rel="stylesheet" href="styles.css"/>
 <body>
-<div id="main" class="d-flex justify-content-center">
-<h1 id="heading">BMI-CALCULATOR</h1></div>
-<div >
+<div>
+
+  <div >
         
-    <form action="bmi_calculator",method="POST">
-    <label for="fname">First Name</label>
-    <input type="text" id="rname" name="rname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="height">Height</label>
-    <input type="text" id="height" name="height" placeholder="Your height (m)">
-
-    <label for="weight">Weight</label>
-    <input type="text" id="weight" name="weight" placeholder="Your Weight (Kgs)">
-			
-     <input class="btn" type="submit" value="GET BMI">
-	</form>
-    </div>
+    <form >
+      <fieldset>
+        <legend><h1 id="heading">BMI-CALCULATOR</h1></legend>
+      <hr/><br/>
+      <label for="fname">First Name</label>
+      <input type="text" id="rname" name="rname" placeholder="Your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="height">Height</label>
+      <input type="text" id="height" name="height" placeholder="Your height (m)">
+      <label for="weight">Weight</label>
+      <input type="text" id="weight" name="weight" placeholder="Your Weight (Kgs)">
+      </fieldset>
+      <input class="btn" type="submit" value="GET BMI">
+	  </form>
+  </div>
 	</body>
 </html>
